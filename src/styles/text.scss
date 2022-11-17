@@ -1,0 +1,15 @@
+@import 'palette';
+
+@each $color, $value in $colors {
+  .snf-text-color-#{$color} {
+    color: $value !important;
+  }
+}
+
+.snf-text-color-inherit {
+  color: inherit;
+}
+
+.snf-text-underline {
+  text-decoration: underline;
+}

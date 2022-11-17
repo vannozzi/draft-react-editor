@@ -1,0 +1,31 @@
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+$fontSizes: (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 28, 32, 35, 96);
+
+@each $fontSize in $fontSizes {
+  .snf-font-#{$fontSize} {
+    font-size: ($fontSize / 16) + unquote(rem);
+  }
+
+  @include media-breakpoint-up(md) {
+    .snf-font-md-#{$fontSize} {
+      font-size: ($fontSize / 16) + unquote(rem);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .snf-font-lg-#{$fontSize} {
+      font-size: ($fontSize / 16) + unquote(rem);
+    }
+  }
+}
+
+$font-weights: (600);
+
+@each $weight in $font-weights {
+  .snf-font-w#{$weight / 100} {
+    font-weight: $weight;
+  }
+}

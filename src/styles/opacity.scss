@@ -1,0 +1,7 @@
+$opacities: ();
+
+@each $opacity in $opacities {
+  .snf-opacity-#{$opacity} {
+    opacity: #{'0.' + $opacity};
+  }
+}

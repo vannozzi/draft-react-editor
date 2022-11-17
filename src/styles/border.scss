@@ -1,0 +1,36 @@
+@import 'palette';
+
+$borderWidths: (2, 3);
+
+@each $borderWidth in $borderWidths {
+  .snf-border-top-width-#{$borderWidth} {
+    border-top-width: ($borderWidth / 16) + unquote('rem');
+    border-top-style: solid;
+  }
+
+  .snf-border-bottom-width-#{$borderWidth} {
+    border-bottom-width: ($borderWidth / 16) + unquote('rem');
+    border-bottom-style: solid;
+  }
+
+  .snf-border-left-width-#{$borderWidth} {
+    border-left-width: ($borderWidth / 16) + unquote('rem');
+    border-left-style: solid;
+  }
+
+  .snf-border-right-width-#{$borderWidth} {
+    border-right-width: ($borderWidth / 16) + unquote('rem');
+    border-right-style: solid;
+  }
+
+  .snf-border-width-#{$borderWidth} {
+    border-width: ($borderWidth / 16) + unquote('rem');
+    border-style: solid;
+  }
+}
+
+@each $color, $value in $colors {
+  .snf-border-color-#{$color} {
+    border-color: $value;
+  }
+}

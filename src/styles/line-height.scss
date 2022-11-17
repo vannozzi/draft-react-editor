@@ -1,0 +1,7 @@
+$lineHeights: (1, 1\.1, 1\.2);
+
+@each $lineHeight in $lineHeights {
+  .snf-line-height-#{$lineHeight} {
+    line-height: $lineHeight;
+  }
+}

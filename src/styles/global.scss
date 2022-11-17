@@ -1,0 +1,36 @@
+// External styles.
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~nprogress/nprogress.css';
+
+// Internal styles.
+@import 'background.scss';
+@import 'opacity.scss';
+@import 'cursor.scss';
+@import 'text.scss';
+@import 'font.scss';
+@import 'line-height.scss';
+@import 'border.scss';
+@import 'image.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#__next {
+  height: 100%;
+  width: 100%;
+}
